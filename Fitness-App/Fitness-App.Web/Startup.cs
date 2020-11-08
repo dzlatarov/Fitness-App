@@ -78,6 +78,10 @@ namespace Fitness_App.Web
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
+            using var scope = app.ApplicationServices.CreateScope();
+            var dbContext = scope.ServiceProvider.GetRequiredService<Fitness_AppDbContext>();
+            dbContext.Database.Migrate();
         }
     }
 }

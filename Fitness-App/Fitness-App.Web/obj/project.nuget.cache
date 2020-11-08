@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pFnhs0LgydDzJbEm/iab31lY1Ei+HmZlm/LZDEmLL+TnY8eagiEjZU/ZCOJYYS/NAMLeL6D6wxcYi+ki8Km9GQ==",
+  "dgSpecHash": "wNQBKFr3OSDe/VAC9WZtQlLL1/gFN8EnU9p0ZGuZ9WFWlVyIUpeSp/qiBfJnD/eO6dlLyufW2ZeYZlNBFsCb4A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Freeware Sys\\source\\repos\\Fitness-App\\Fitness-App\\Fitness-App.Web\\Fitness-App.Web.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.identity.entityframeworkcore\\2.2.0\\microsoft.aspnetcore.identity.entityframeworkcore.2.2.0.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.9\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.9.nupkg.sha512",
     "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.9\\microsoft.aspnetcore.identity.ui.3.1.9.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
