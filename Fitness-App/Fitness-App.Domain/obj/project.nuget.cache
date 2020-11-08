@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "J0bztaDN+hXakcHf1uPtc1VMFC/uS/JiQkCer635c6SbpQ+OtVvC/PW2oUVJpRkFwDAQe36bbI5bhMZ3wQ9M3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Freeware Sys\\source\\repos\\Fitness-App\\Fitness-App\\Fitness-App.Domain\\Fitness-App.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

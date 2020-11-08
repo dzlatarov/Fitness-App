@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Fitness_App.Web</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fitness-App.Persistence\Fitness-App.Persistence.csproj" />
+    <ProjectReference Include="..\Fitness-App.Services\Fitness-App.Services.csproj" />
+  </ItemGroup>
+
+</Project>
