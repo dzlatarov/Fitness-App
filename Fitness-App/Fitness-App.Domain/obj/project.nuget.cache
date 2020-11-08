@@ -1,11 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "J0bztaDN+hXakcHf1uPtc1VMFC/uS/JiQkCer635c6SbpQ+OtVvC/PW2oUVJpRkFwDAQe36bbI5bhMZ3wQ9M3Q==",
+  "dgSpecHash": "GY9Vyzv2IfilcHEtZhGC4PzEQ2QHN9u0I8SG0ug7TfbZxtrwmX6bDDc1JFpAJ23eqybl2VC3uYYlXhoeDc7JeQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Freeware Sys\\source\\repos\\Fitness-App\\Fitness-App\\Fitness-App.Domain\\Fitness-App.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.9\\microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.9\\microsoft.aspnetcore.cryptography.keyderivation.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.9\\microsoft.extensions.caching.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.9\\microsoft.extensions.configuration.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.9\\microsoft.extensions.configuration.binder.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.9\\microsoft.extensions.dependencyinjection.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.9\\microsoft.extensions.identity.core.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.9\\microsoft.extensions.identity.stores.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.logging\\3.1.9\\microsoft.extensions.logging.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
     "C:\\Users\\Freeware Sys\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\system.memory\\4.5.2\\system.memory.4.5.2.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\Freeware Sys\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
