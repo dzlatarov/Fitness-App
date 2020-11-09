@@ -81,7 +81,7 @@ namespace Fitness_App.Web
 
             using var scope = app.ApplicationServices.CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<Fitness_AppDbContext>();
-            dbContext.Database.Migrate();
+            //dbContext.Database.Migrate();
         }
     }
 }
