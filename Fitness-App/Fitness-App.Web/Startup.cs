@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Fitness_App.Domain;
+using Fitness_App.Web.Extensions;
 
 namespace Fitness_App.Web
 {
@@ -42,7 +43,7 @@ namespace Fitness_App.Web
                .AddRoles<IdentityRole>()
                .AddRoleManager<RoleManager<IdentityRole>>()
                .AddDefaultTokenProviders()
-               .AddEntityFrameworkStores<Fitness_AppDbContext>(); ;
+               .AddEntityFrameworkStores<Fitness_AppDbContext>();
 
             services.AddMvc();
             services.AddRazorPages();
@@ -52,11 +53,14 @@ namespace Fitness_App.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Fitness_AppDbContext context)
         {
+            var seedRoles = new AddRolesExtensions(app, context);
+            seedRoles.CreateRoles().Wait();
+
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();                
+                app.UseDeveloperExceptionPage();
             }
             else
             {
@@ -81,7 +85,10 @@ namespace Fitness_App.Web
 
             using var scope = app.ApplicationServices.CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<Fitness_AppDbContext>();
-            //dbContext.Database.Migrate();
+            //if (env.IsDevelopment())
+            //{
+            //    dbContext.Database.Migrate();
+            //}
         }
     }
 }
