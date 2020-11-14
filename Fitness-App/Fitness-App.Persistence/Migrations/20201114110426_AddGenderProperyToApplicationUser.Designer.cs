@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fitness_App.Persistence.Migrations
 {
     [DbContext(typeof(Fitness_AppDbContext))]
-    [Migration("20201108185629_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20201114110426_AddGenderProperyToApplicationUser")]
+    partial class AddGenderProperyToApplicationUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,11 +40,26 @@ namespace Fitness_App.Persistence.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FitnessProgramId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("MiddleName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("nvarchar(256)")
@@ -75,6 +90,8 @@ namespace Fitness_App.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("FitnessProgramId");
+
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
 
@@ -84,6 +101,43 @@ namespace Fitness_App.Persistence.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("Fitness_App.Domain.Exercise", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Complexity")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FitnessProgramId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FitnessProgramId");
+
+                    b.ToTable("Exercises");
+                });
+
+            modelBuilder.Entity("Fitness_App.Domain.FitnessProgram", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("Duration")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProgramType")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FitnessPrograms");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -215,6 +269,22 @@ namespace Fitness_App.Persistence.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Fitness_App.Domain.ApplicationUser", b =>
+                {
+                    b.HasOne("Fitness_App.Domain.FitnessProgram", "FitnessProgram")
+                        .WithMany("Users")
+                        .HasForeignKey("FitnessProgramId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Fitness_App.Domain.Exercise", b =>
+                {
+                    b.HasOne("Fitness_App.Domain.FitnessProgram", "FitnessProgram")
+                        .WithMany("Exercises")
+                        .HasForeignKey("FitnessProgramId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

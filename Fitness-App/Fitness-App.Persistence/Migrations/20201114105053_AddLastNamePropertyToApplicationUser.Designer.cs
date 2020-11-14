@@ -4,14 +4,16 @@ using Fitness_App.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Fitness_App.Persistence.Migrations
 {
     [DbContext(typeof(Fitness_AppDbContext))]
-    partial class Fitness_AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201114105053_AddLastNamePropertyToApplicationUser")]
+    partial class AddLastNamePropertyToApplicationUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,9 +46,6 @@ namespace Fitness_App.Persistence.Migrations
                     b.Property<string>("FitnessProgramId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("Gender")
-                        .HasColumnType("int");
-
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
@@ -55,9 +54,6 @@ namespace Fitness_App.Persistence.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("MiddleName")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("nvarchar(256)")
