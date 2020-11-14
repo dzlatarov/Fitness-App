@@ -85,10 +85,10 @@ namespace Fitness_App.Web
 
             using var scope = app.ApplicationServices.CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<Fitness_AppDbContext>();
-            //if (env.IsDevelopment())
-            //{
-            //    dbContext.Database.Migrate();
-            //}
+            if (env.IsDevelopment())
+            {
+                dbContext.Database.Migrate();
+            }
         }
     }
 }

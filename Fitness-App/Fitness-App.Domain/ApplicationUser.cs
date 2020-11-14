@@ -7,6 +7,8 @@ namespace Fitness_App.Domain
 {
     public class ApplicationUser : IdentityUser
     {
+        public FitnessProgram FitnessProgram { get; set; }
 
+        public string FitnessProgramId { get; set; }
     }
 }
